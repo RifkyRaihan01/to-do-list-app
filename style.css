@@ -28,6 +28,18 @@ h1{
     font-size: 1rem;
 }
 
+.addButton{
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.addButton:hover{
+    background: grey;
+}
+
 
 .show-task{
     margin-top: 20px;
