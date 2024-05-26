@@ -1,7 +1,11 @@
 body{
     margin: 0;
     font-family: monospace;
-    background: #CCDDE2;
+    /* background: #CCDDE2; */
+    background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +14,7 @@ body{
 h1{
     font-size: 4rem;
     text-align: center;
+    color: white;
 }
 
 .input-container{
@@ -22,6 +27,7 @@ h1{
 .input-container label{
     font-size: 1rem;
     margin-bottom: 5px;
+    color: white;
 }
 
 .input-container input{
@@ -45,9 +51,30 @@ h1{
     margin-top: 20px;
     background-color: #FBFEF9;
     width: 800px;
+    height: 300px;
     padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
-.show-task ol li{
-    font-size: 1.5rem;
+
+.delete{
+    font-size: 1.rem;
+    padding: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: grey;
+}
+
+lI{
+    font-size: 1rem;
+    list-style: number;
+    color: white;
+    margin-bottom: 5px;
 }
