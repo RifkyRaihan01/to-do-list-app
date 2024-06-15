@@ -61,14 +61,14 @@ h1{
 }
 
 
-.delete{
-    font-size: 1.rem;
-    padding: 0 5px;
+.delete , .move-up, .move-down, .edit{
+    font-size: 1rem;
+    padding: 0 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.delete:hover{
+.delete:hover, .move-up:hover, .move-down:hover, .edit:hover{
     background-color: grey;
 }
 
